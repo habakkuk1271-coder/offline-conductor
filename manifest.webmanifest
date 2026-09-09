@@ -1,9 +1,1 @@
-{
-  "name": "外出計數",
-  "short_name": "外出計數",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#dcecff",
-  "theme_color": "#dcecff",
-  "lang": "zh-Hant"
-}
+{"name":"外出服事","short_name":"外出服事","start_url":"./","scope":"./","display":"standalone","background_color":"#dcecff","theme_color":"#dcecff","lang":"zh-Hant"}
