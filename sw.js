@@ -1,4 +1,4 @@
-const CACHE='offline-conductor-v2-3';
+const CACHE='offline-conductor-v2-4';
 const CORE=['./','./index.html','./manifest.webmanifest','./assets/line-qr.svg','./assets/mystery-01.jpg','./assets/mystery-02.jpg','./assets/mystery-03.jpg','./assets/mystery-04.jpg','./assets/mystery-05.jpg','./assets/mystery-06.jpg','./assets/mystery-07.jpg','./assets/mystery-08.jpg','./assets/mystery-09.jpg','./assets/mystery-10.jpg'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await Promise.all(CORE.map(async u=>{try{await c.add(u)}catch(_){}}));await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(k!==CACHE)await caches.delete(k);await self.clients.claim()})()));
